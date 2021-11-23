@@ -30,7 +30,9 @@ export class DataService {
 
   login(acno:any,pswd:any){
     let database=this.data
+
     if(acno in database){
+
     if(pswd=database[acno]["password"]){
       return true
     }
@@ -45,4 +47,65 @@ export class DataService {
   }
 }
 
+deposit(acno:any,pswd:any,amnt:any){
+
+  var amount = parseInt(amnt)
+
+  let database = this.data
+
+  if(acno in database){
+
+    if(pswd=database[acno]["password"]){
+
+      database[acno]["balance"] = database[acno]["balance"]+amount
+      return database[acno]["balance"]
+    }
+    else{
+      alert("invalid password")
+      return false
+    }
+
+
+  }
+    else{
+      alert("User Not found")
+      return false
+    }
+  }
+
+  withdraw(acno1:any,pswd1:any,amnt1:any){
+
+    var amount = parseInt(amnt1)
+  
+    let database = this.data
+  
+    if(acno1 in database){
+  
+      if(pswd1==database[acno1]["password"]){
+
+        if( database[acno1]["balance"]>amount){
+          database[acno1]["balance"] = database[acno1]["balance"]-=amount
+        return database[acno1]["balance"]
+
+        }
+        else{
+          alert("Insufficient Balance")
+          return false
+        }
+  
+        
+      }
+      else{
+        alert("invalid password")
+        return false
+      }
+  
+  
+    }
+      else{
+        alert("User Not found")
+        return
+      }
+    }
 }
+
