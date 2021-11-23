@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(228, 15, 15);
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #3bff8d;
+background-image: linear-gradient(147deg, #3417db 0%, #25ff42 74%);
+
+    border: solid;
+}
+h1 {
+    text-align: center;
+
+}
+label {
+    padding: 20px;
+}
+
+button {
+    background-color: rgb(26, 233, 19);
+    font-size: 16px;
+    padding: 6px 20px;
+    margin-top: 4%;
+    margin-left: 0%;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    margin-left: 30%;
+    background-color: rgb(107, 15, 228);
+}
