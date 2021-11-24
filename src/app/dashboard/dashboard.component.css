@@ -1,36 +1,34 @@
 body{
     background-color: rgb(228, 15, 15);
     width: 100%;
-    height: 100%;
+    height: 150%;
 }
 .main{
     width: 500px;
-    height: 500px;
+    height: 400px;
     margin: auto;
-    background-color: #3bff8d;
-background-image: linear-gradient(147deg, #3417db 0%, #25ff42 74%);
-
+    background: linear-gradient(147deg, #ec1e85 0%, #3d1ada 74%);
     border: solid;
 }
 h1 {
     text-align: center;
+    color: beige;
 
 }
 label {
     padding: 20px;
 }
+.div{
+    text-align: center;
+    color: beige;
+}
 
 button {
-    background-color: rgb(26, 233, 19);
+    background-color: rgb(48, 19, 212);
     font-size: 16px;
     padding: 6px 20px;
     margin-top: 4%;
-    margin-left: 0%;
+    margin-left: 40%;
 }
 
-.container{
-    height: 300px;
-    width: 300px;
-    margin-left: 30%;
-    background-color: rgb(228, 15, 15);
-}
+

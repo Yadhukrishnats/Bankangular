@@ -9,7 +9,7 @@ import { DataService } from '../service/data.service';
 })
 export class LoginComponent implements OnInit {
 
-aim="your perfect banking partner"
+aim="WELCOME TO YDFC"
 accno="account number please"
 acno=""
 password=""

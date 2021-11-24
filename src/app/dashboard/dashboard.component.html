@@ -1,104 +1,49 @@
+<div class="main">
+    <form (ngSubmit)="deposit()">
+    
+    <h1>DEPOSIT</h1><br><br><br>
+    
+    
+    <div>
+    <label for="account_no">Account Number:</label>
+    <input type="text" id="account_no" name="acno"[(ngModel)]="acno" ><br><br><br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" [(ngModel)]="password" ><br><br><br> 
+    <label for="amt">Amount</label> 
 
+    <input type="amount" id="amt"name="amnt" [(ngModel)]="amnt" >
+     <button type="button" (click)="deposit()">DEPOSIT</button><br><br>
+    
+</div>
 
-    <div class="container w-50">
-
-        <h2>deposit</h2>
-        <form (ngSumbit)="deposit()">
-    
-        
-    
-        <div class="p-2">
-    
-            <label for="accno">Acc No</label> <br>
-    
-            <input type="acno" id="accno" name="acno" [(ngModel)]="acno"><br>
-    
-        </div>
-    
-        <div class="p-2">
-    
-            <label for="pas">password</label><br>
-    
-            <input type="password" id="pas" name="pswd" [(ngModel)]="pswd"><br>
-    
-        </div>
-    
-        <!-- <div class="p-2">
-    
-            <label for="pas1">Confirm password</label> <br>
-    
-            <input type="password" id="pas1"><br>
-    
-        </div> -->
-    
-        <div class="p-2">
-    
-            <label for="amt">Amount</label> <br>
-    
-            <input type="amount" id="amt" name="amnt" [(ngModel)]="amnt"  ><br>
-    
-        </div>
-    
-        <div>
-    
-            <button type="submit"  value="deposit" (click)="deposit()" class="btn btn-primary">deposit</button>
-    
-        </div>
-    </form>
+</form>
 
     
-        </div>
+    
+
+</div>
+
+<div class="main">
+    <form (ngSubmit)="withdraw()">
+
+    
+    <h1>WITHDRAW</h1><br><br><br>
     
     
+    <div>
+    <label for="account_no">Account Number:</label>
+    <input type="text" id="account_no" name= "acno1"[(ngModel)]="acno1" ><br><br><br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password1"[(ngModel)]="password1" ><br><br><br> 
+    <label for="amt">Amount</label> 
+
+    <input type="amount" id="amt" name="amnt1" [(ngModel)]="amnt1" ><br>
+     <button type="button" (click)="withdraw()">WITHDRAW</button><br><br>
+     
+</div>
+</form>
+
     
     
-            <!-- <p style="color: white; align-items: baseline;"> Please <a routerLink=''>Login </a> If you already registered...!</p> -->
-    
-            <br>
-    
-    
-            <div class="container w-50">
-    
-                <h2>fund transfer</h2>
-                   <form  >
-                
-            
-                <div class="p-2">
-            
-                    <label for="accno">Acc No</label> <br>
-            
-                    <input type="acno" id="accno" name="acno1" [(ngModel)]="acno1"><br>
-            
-                </div>
-            
-                <div class="p-2">
-            
-                    <label for="pas">password</label><br>
-            
-                    <input type="password" id="pas" name="pswd1" [(ngModel)]="pswd1"><br>
-            
-                </div>
-            
-                <!-- <div class="p-2">
-            
-                    <label for="pas1">Confirm password</label> <br>
-            
-                    <input type="password" id="pas1"><br>
-            
-                </div> -->
-            
-                <div class="p-2">
-            
-                    <label for="amt">Amount</label> <br>
-            
-                    <input type="amount" id="amt" name="amnt1" [(ngModel)]="amnt1"  ><br>
-            
-                </div>
-            
-                <div>
-            
-                    <button type="submit"  value="withdraw" (click)="Withdraw()" class="btn btn-primary">withdraw</button>
-            
-                </div>
-            </form>
-                </div>
+
+</div>
